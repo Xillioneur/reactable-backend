@@ -1,0 +1,38 @@
+{
+  "name": "reactable-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./",
+    "test": "jest -i --verbose --coverage --runInBand",
+    "start": "node index.js",
+    "dboff": "killall mongod",
+    "watch": "nodemon index.js",
+    "dbon": "mkdir -p ./db && mongod --dbpath ./db"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xillioneur/reactable-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xillioneur/reactable-backend/issues"
+  },
+  "homepage": "https://github.com/Xillioneur/reactable-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "dotenv": "^6.2.0",
+    "express": "^4.16.4",
+    "http-errors": "^1.7.2",
+    "mongoose": "^5.4.16",
+    "superagent": "^4.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.14.1",
+    "jest": "^24.1.0"
+  }
+}
