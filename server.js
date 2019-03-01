@@ -24,5 +24,8 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use("/", home);
 
 app.listen(port, () =>
-  console.log(`server is running on port ${process.env.API_URL}`)
+  console.log(
+    `server is running on port ${process.env.API_URL ||
+      "http://localhost:5000"} `
+  )
 );
