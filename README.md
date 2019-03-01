@@ -9,25 +9,27 @@ See full MERN stack boilerplate at [reactable](https://github.com/Xillioneur/rea
   cd reactable-backend
   npm install
   npm run dbon
-  npm start
+  npm run dev
 ```
 
 ## Usage
 
+> Start the server
+
 ```shell
-cd backend
+npm start
+```
+
+> Start the server in dev
+
+```shell
+npm run dev
 ```
 
 > Start mongod
 
 ```shell
  npm run dbon
-```
-
-> Start the server
-
-```shell
-npm start
 ```
 
 ---
